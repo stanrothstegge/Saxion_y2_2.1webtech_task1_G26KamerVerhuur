@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huurder.html</title>
+</head>
+<body>
+<h1> Kamer Overzicht</h1>
+<p>Op deze pagina kunt u zoeken in het kamer register</p>
+<a href="/ShowPersonsServlet">bekijk gebruikers</a>
+<a href="logout.html">uitloggen</a>
+<form action="/SearchRoomServlet" method="post">
+    aantal m2:
+    <br>
+    <input type="number" name="oppervlakte" min="0" step="1" value=0>
+    <br>
+    maximale huurprijs:
+    <br>
+    <input type="number" name="huur" min="0" step="1" value="1000">
+    <br>
+    plaats:
+    <br>
+    <input type="search" name="plaats" pattern="([A-zÀ-ž'\s]){2,}" placeholder="Zwolle"
+           title="voer een correcte plaatsnaam in of laat het veld leeg">
+    <br>
+    <input type="submit" value="Zoeken"></br>
+</form>
+</body>
+</html>
